@@ -1,0 +1,138 @@
+/*Stylesheet by Jonathan Hansel, UW-Madsion, GEOG 575 Fall 2019*/
+.map {
+  border: medium solid #999;
+  margin: 10px 0 0 20px;
+    position: relative;
+    top: 50px;
+}
+
+.states {
+  stroke: #000;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+}
+
+body {
+  background-color: lightgray;
+/*    background-image: url('/data/flag.png') no-repeat;*/
+/*
+  background: url('/data/flag.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+*/
+}
+
+#header {
+  position: absolute;
+  width: 99%;
+  top:15px;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+    line-height: 50%;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+#footer {
+    position: fixed;
+    left: 5px;
+    bottom: 20px;
+    width: 100%;
+    color: black;
+    font-size: 10px;
+    line-height: 0.5;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline-block;
+}
+
+a:hover {
+    color: darkred;
+    background-color: transparent;
+}
+
+.dropdown {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1px;
+  border: 1 px solid #999;
+  box-shadow: 2px 2px 4px #999;
+}
+
+.numbers {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.5em;
+}
+
+.chart {
+  float: right;
+  margin: 10px 20px 0 0;
+  position: relative;
+    top: 50px;
+}
+
+.chartTitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  fill: black;
+}
+
+.chartFrame {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
+    fill: black;
+}
+
+.infolabel {
+    position: absolute;
+    height: 40px;
+    min-width: 150px;
+    color: red;
+    background-color: darkslategray;
+    border: solid thin black;
+    padding: 5px 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1em;
+    z-index: 50;
+}
+
+.infolabel h1 {
+    margin: 0 20px 0 0;
+    color: red;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+    z-index: 50;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25em;
+}
